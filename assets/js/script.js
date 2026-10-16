@@ -81,4 +81,11 @@ function renderProject(project, index) {
   if (links.childElementCount) card.append(links);
   return card;
 }
-if (projectGrid) projects.forEach((project, index) => projectGrid.append(renderProject(project, index)));
+if (projectGrid) {
+  if (projects.length) {
+    projects.forEach((project, index) => projectGrid.append(renderProject(project, index)));
+  } else {
+    addText(projectGrid, 'p', 'empty-state', 'Proyek pilihan akan ditampilkan di sini.');
+  }
+}
+
