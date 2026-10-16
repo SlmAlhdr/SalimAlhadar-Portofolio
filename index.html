@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
@@ -7,6 +7,7 @@
     <meta name="description" content="Portofolio pribadi — ganti deskripsi ini dengan bidang dan karya Anda." />
     <title>Portofolio — Nama Anda</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/portfolio-data.js" defer></script>
     <script src="assets/js/script.js" defer></script>
   </head>
   <body>
@@ -37,39 +38,14 @@
       <section class="work section-wrap" id="karya">
         <div class="section-heading">
           <div><p class="eyebrow">01 / KARYA PILIHAN</p><h2>Beberapa hal<br />yang pernah saya buat.</h2></div>
-          <p class="section-note">Ganti kartu contoh ini dengan proyek nyata, kontribusi Anda, dan tautan yang bisa diperiksa.</p>
+          <p class="section-note">Tambahkan foto dan detail proyek di assets/js/portfolio-data.js. Simpan gambarnya di assets/images/.</p>
         </div>
-        <div class="project-grid">
-          <article class="project-card project-large">
-            <a class="project-visual visual-lime" href="#kontak" aria-label="Tanyakan tentang proyek pertama">
-              <span class="visual-label">[Nama proyek 01]</span>
-              <span class="visual-shape shape-window" aria-hidden="true"><i></i><i></i><i></i><b></b></span>
-              <span class="visual-arrow" aria-hidden="true">↗</span>
-            </a>
-            <div class="project-info"><div><h3>[Nama proyek pertama]</h3><p>[Masalah yang diselesaikan dan kontribusi Anda.]</p></div><span class="project-type">[Kategori · Tahun]</span></div>
-          </article>
-          <article class="project-card">
-            <a class="project-visual visual-blue" href="#kontak" aria-label="Tanyakan tentang proyek kedua">
-              <span class="visual-label">[Nama proyek 02]</span>
-              <span class="visual-shape shape-poster" aria-hidden="true">IDEA<br /><i>→</i></span>
-              <span class="visual-arrow" aria-hidden="true">↗</span>
-            </a>
-            <div class="project-info"><div><h3>[Nama proyek kedua]</h3><p>[Hasil atau bukti singkat proyek.]</p></div><span class="project-type">[Kategori · Tahun]</span></div>
-          </article>
-          <article class="project-card">
-            <a class="project-visual visual-peach" href="#kontak" aria-label="Tanyakan tentang proyek ketiga">
-              <span class="visual-label">[Nama proyek 03]</span>
-              <span class="visual-shape shape-orbit" aria-hidden="true"><i></i><b></b></span>
-              <span class="visual-arrow" aria-hidden="true">↗</span>
-            </a>
-            <div class="project-info"><div><h3>[Nama proyek ketiga]</h3><p>[Peran Anda dan keputusan penting yang dibuat.]</p></div><span class="project-type">[Kategori · Tahun]</span></div>
-          </article>
-        </div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
       </section>
 
       <section class="about section-wrap" id="tentang">
         <p class="eyebrow">02 / TENTANG SAYA</p>
-        <div class="about-content"><h2>Rasa ingin tahu<br />adalah <em>cara kerja.</em></h2><div><p>Saya adalah [profesi] yang berfokus pada [keahlian utama]. Dalam pekerjaan, saya suka memahami kebutuhan, menyederhanakan masalah, lalu membuat solusi yang mudah digunakan.</p><p class="skills-label">FOKUS SAYA</p><ul class="skill-list"><li>[Keahlian 01]</li><li>[Keahlian 02]</li><li>[Keahlian 03]</li></ul></div></div>
+        <div class="about-content"><h2>Rasa ingin tahu<br />adalah <em>cara kerja.</em></h2><div><img id="profile-photo" class="profile-photo" alt="" hidden /><p>Saya adalah [profesi] yang berfokus pada [keahlian utama]. Dalam pekerjaan, saya suka memahami kebutuhan, menyederhanakan masalah, lalu membuat solusi yang mudah digunakan.</p><p class="skills-label">FOKUS SAYA</p><ul class="skill-list"><li>[Keahlian 01]</li><li>[Keahlian 02]</li><li>[Keahlian 03]</li></ul></div></div>
       </section>
 
       <section class="contact section-wrap" id="kontak">
@@ -81,3 +57,6 @@
     <footer class="site-footer"><a class="brand" href="#beranda">NA<span>.</span></a><p>Dibuat dengan teliti · <span id="year"></span></p><a href="#beranda">Kembali ke atas ↑</a></footer>
   </body>
 </html>
+
+
+

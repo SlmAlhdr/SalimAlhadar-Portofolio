@@ -34,3 +34,13 @@ Portofolio/
 ├── index.html             # halaman utama
 └── README.md
 ```
+
+## Menambahkan foto dan proyek
+
+1. Salin foto Anda atau gambar proyek ke folder assets/images/.
+2. Buka assets/js/portfolio-data.js.
+3. Isi portfolioProfile.image untuk foto profil, lalu isi nama, ringkasan, kategori, dan tahun pada setiap objek proyek.
+4. Isi properti image dengan jalur gambar, misalnya assets/images/proyek-saya.jpg.
+5. Untuk menambah proyek, salin satu objek proyek beserta tanda koma, lalu ganti isinya. Jika tidak ada tautan demo atau kode, biarkan liveUrl dan sourceUrl kosong.
+
+Contoh data dan keterangan folder gambar sudah tersedia. Pastikan nama berkas pada jalur sama persis dengan nama foto yang disimpan. Setelah itu buka ulang halaman atau push perubahan agar situs online ikut diperbarui.
