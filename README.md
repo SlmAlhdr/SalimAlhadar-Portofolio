@@ -5,6 +5,7 @@ Dokumen ini menjelaskan cara berpikir untuk menyusun portofolio web dan aturan k
 ## Mulai di sini
 
 - [Halaman portofolio](index.html) — buka langsung di browser, lalu ganti konten bertanda kurung siku.
+- [Pratinjau online](https://slmalhadar-lab.github.io/Portofolio/) — tersedia setelah GitHub Actions menyelesaikan deployment pertama.
 - `assets/css/style.css` — tampilan, warna, dan aturan responsif.
 - `assets/js/script.js` — menu seluler dan tahun footer.
 - [Logika membangun portofolio](docs/LOGIKA-PORTOFOLIO.md)
@@ -27,6 +28,7 @@ Portofolio/
 ├── assets/
 │   ├── css/style.css
 │   └── js/script.js
+├── .github/workflows/     # deployment otomatis ke GitHub Pages
 ├── docs/                  # dokumentasi logika portofolio
 ├── system/                # panduan anti-slop AI
 ├── index.html             # halaman utama
